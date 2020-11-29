@@ -1,0 +1,9 @@
+# Root .gitignore, not for Unity-related things,
+# put that in the Unity project's .gitignore
+
+# Mac Stuff
+.DS_Store
+
+# My Standard Stuff, uncomment or change as needed
+/Builds
+# /Media

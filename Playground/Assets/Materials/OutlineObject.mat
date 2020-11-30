@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Outline w Offsets
+  m_Name: OutlineObject
   m_Shader: {fileID: -6465566751694194690, guid: 6ec9a95239e654675a981bc853331bb6,
     type: 3}
   m_ShaderKeywords: 
@@ -20,17 +20,21 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 10307, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NoiseTexture:
         m_Texture: {fileID: 2800000, guid: 951da2616882a4b7aa912792c40001a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _ColorSensitivity: 0.455
-    - _DepthSensitivity: 0.235
+    - _ColorSensitivity: -11.93
+    - _DepthSensitivity: 1
     - _NormalsSensitivity: 5
-    - _OutlineThickness: 3
+    - _OutlineThickness: 7
     m_Colors:
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6622502888390159876
 MonoBehaviour:

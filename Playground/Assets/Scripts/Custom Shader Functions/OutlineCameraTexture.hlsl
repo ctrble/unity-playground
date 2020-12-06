@@ -57,13 +57,12 @@ void OutlineCameraTexture_float(float2 UV, float OutlineThickness, float DepthSe
     edgeNormal = edgeNormal > (1/NormalsSensitivity) ? 1 : 0;
 
     // Color
-  //   float3 colorFiniteDifference0 = colorSamples[1] - colorSamples[0];
-  //   float3 colorFiniteDifference1 = colorSamples[3] - colorSamples[2];
-  //   float edgeColor = sqrt(dot(colorFiniteDifference0, colorFiniteDifference0) + dot(colorFiniteDifference1, colorFiniteDifference1));
-	// edgeColor = edgeColor > (1/ColorSensitivity) ? 1 : 0;
+    float3 colorFiniteDifference0 = colorSamples[1] - colorSamples[0];
+    float3 colorFiniteDifference1 = colorSamples[3] - colorSamples[2];
+    float edgeColor = sqrt(dot(colorFiniteDifference0, colorFiniteDifference0) + dot(colorFiniteDifference1, colorFiniteDifference1));
+	edgeColor = edgeColor > (1/ColorSensitivity) ? 1 : 0;
 
-    // float edge = max(edgeDepth, max(edgeNormal, edgeColor));
-    float edge = max(edgeDepth, edgeNormal);
+    float edge = max(edgeDepth, max(edgeNormal, edgeColor));
 
     float4 original = SAMPLE_TEXTURE2D(_CameraColorTexture, sampler_CameraColorTexture, uvSamples[0]);
 

@@ -19,14 +19,37 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _NoiseTexture:
+        m_Texture: {fileID: 2800000, guid: 7607bca3ad3164817b305f20259579e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_B899E58E_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C84FFF65_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_D6C714EB_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ED51046B_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 951da2616882a4b7aa912792c40001a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ColorAlpha: 1
-    - _ColorSensitivity: 0.455
-    - _DepthSensitivity: 0.235
-    - _NormalsSensitivity: 5
+    - _ColorSensitivity: 6
+    - _DepthSensitivity: 0.2
+    - _ErrorPeriod: 12.7
+    - _ErrorRange: 0.003
+    - _NoiseAmount: 0.05
+    - _NormalsSensitivity: 4
     - _OutlineAlpha: 1
-    - _OutlineThickness: 3
+    - _OutlineThickness: 2
     m_Colors:
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

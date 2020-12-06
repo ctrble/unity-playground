@@ -44,11 +44,12 @@ Material:
     - _ColorAlpha: 1
     - _ColorSensitivity: 6
     - _DepthSensitivity: 0.2
-    - _ErrorPeriod: 12.7
-    - _ErrorRange: 0.003
-    - _NoiseAmount: 0.05
+    - _ErrorPeriod: 30
+    - _ErrorRange: 0.0018
+    - _NoiseAmount: 0.002
     - _NormalsSensitivity: 4
     - _OutlineAlpha: 1
+    - _OutlineIntensity: 0.5
     - _OutlineThickness: 2
     m_Colors:
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}

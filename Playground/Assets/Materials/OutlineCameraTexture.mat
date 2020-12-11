@@ -42,7 +42,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ColorAlpha: 1
-    - _ColorSensitivity: 6
+    - _ColorSensitivity: 0
     - _DepthSensitivity: 0.2
     - _ErrorPeriod: 30
     - _ErrorRange: 0.0018
